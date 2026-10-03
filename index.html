@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindhuja Muthusamy | Computer Science Student</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Personal portfolio of Sindhuja Muthusamy, 2nd-year Computer Science Engineering student at Rajalakshmi Engineering College. Documenting my journey into tech, projects, hackathons, and learning.">
+  <meta name="author" content="Sindhuja Muthusamy">
+  <meta property="og:title" content="Sindhuja Muthusamy | Computer Science Student">
+  <meta property="og:description" content="Curious about web development, problem solving and building things that actually help people.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/sindhuja.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css?v=20261003">
+</head>
+<body>
+
+  <!-- ==================== Header & Sticky Navigation ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <div class="brand-wrapper">
+        <a href="#home" class="brand-link" aria-label="Sindhuja Muthusamy Home">
+          <span>sindhuja</span>
+        </a>
+      </div>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#journey">Journey</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#writing">Writing</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Resume Download -->
+        <a href="assets/docs/Sindhuja_Muthusamy_Resume.pdf" class="btn btn-secondary btn-sm" download title="Download Resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience & Leadership</a>
+    <a href="#skills">Skills</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="home">
+    <!-- ==================== Hero Section ==================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm Sindhuja.</p>
+            <h1 class="hero-title serif-display">
+              Computer Science student building, learning and documenting my way into tech.
+            </h1>
+            <p class="hero-bio">
+              Curious about web development, problem solving and building things that actually help people. Still learning, experimenting, and growing one day at a time.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore my work</span>
+                <span class="btn-icon-right">→</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's connect</span>
+                <span class="btn-icon-right">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image with subtle frame & warm accents -->
+          <div class="hero-image-wrapper">
+            <div class="hero-photo-frame">
+              <div class="photo-accent-line"></div>
+              <img src="assets/images/sindhuja.jpg" alt="Sindhuja Muthusamy portrait at Rajalakshmi Engineering College" class="hero-photo" loading="eager">
+              <div class="photo-caption-badge">
+                <span class="photo-badge-title">Sindhuja Muthusamy</span>
+                <span>REC CSE '29</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Personal Introduction ==================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">A little about me</span>
+          <h2 class="section-title">Figuring things out by building and learning along the way.</h2>
+        </div>
+
+        <div class="about-editorial">
+          <div class="about-copy">
+            <p class="about-intro-main">
+              I'm Sindhuja, a 2nd year Computer Science Engineering student at <strong>Rajalakshmi Engineering College, Chennai</strong>. I enjoy building things for the web, solving problems, and turning ideas into something people can actually use.
+            </p>
+            <p class="about-intro-secondary">
+              I'm especially drawn to frontend development because I enjoy imagining how something should look, feel, and work — then figuring out how to build it. I'm still learning, experimenting, and occasionally breaking things before understanding how to fix them.
+            </p>
+            <p class="about-intro-secondary">
+              I like hackathons, problem solving, documenting what I learn, and building small projects that teach me something new. There's still a lot I'm figuring out, and I think that's a good place to be.
+            </p>
+          </div>
+
+          <figure class="about-coffee-visual">
+            <div class="about-mug" aria-label="Minimal coffee mug illustration">
+              <span class="about-mug-steam about-mug-steam-one" aria-hidden="true"></span>
+              <span class="about-mug-steam about-mug-steam-two" aria-hidden="true"></span>
+              <span class="about-mug-coffee" aria-hidden="true"></span>
+              <span class="about-mug-code" aria-hidden="true">&lt;/&gt;</span>
+            </div>
+            <figcaption class="about-coffee-note">
+              <span>Most good ideas start somewhere.</span>
+              <strong>Mine usually start with coffee.</strong>
+              <em>I love coffee as much as I love web development.</em>
+            </figcaption>
+            <span class="about-code-note">// idea in progress</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Coding Record / Consistency ==================== -->
+    <section class="coding-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Coding Record</span>
+          <h2 class="section-title">Learning one problem at a time.</h2>
+          <p class="section-desc">Consistency matters more than quick bursts. Documenting daily progress on algorithmic problem solving.</p>
+        </div>
+
+        <div class="coding-notebook">
+          <div class="coding-counter-grid">
+            <div class="counter-item">
+              <span class="counter-number">#5 <span class="counter-sub">/ 3800+</span></span>
+              <span class="counter-label">College-Wide Rank (LeetCode)</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number">#3</span>
+              <span class="counter-label">CSE Dept Rank</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number">200+</span>
+              <span class="counter-label">LeetCode Problems Solved</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number">70+</span>
+              <span class="counter-label">HackerRank Challenges</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number">120+</span>
+              <span class="counter-label">Day Active Streak</span>
+            </div>
+          </div>
+
+          <p class="coding-quote">
+            "Daily problem solving focused on arrays, strings, hashing, two pointers, and core algorithmic intuition."
+          </p>
+
+          <div class="coding-platforms">
+            <a href="https://leetcode.com/u/sindhujamuthusamy/" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>LeetCode</span>
+            </a>
+            <a href="https://github.com/sindhujaamuthusamy72-byte" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sindhuja-muthusamy7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="platform-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Academic Journey Library ==================== -->
+    <section id="journey" class="journey-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">My Journey</span>
+          <h2 class="section-title">A small library of where I've been.</h2>
+          <p class="section-desc">Five chapters from school to my second year at REC. Open one when you want the longer version.</p>
+        </div>
+
+        <div id="journey-library" class="journey-library" aria-label="Academic journey chapters">
+          <article class="journey-book book-slate" data-journey-book="grade-10">
+            <button class="book-cover" type="button" aria-expanded="false" aria-controls="journey-grade-10">
+              <span class="book-number">01</span>
+              <span class="book-year">2023</span>
+              <span class="book-title">10th Grade</span>
+              <span class="book-subtitle">Where it all started.</span>
+              <span class="book-mark" aria-hidden="true"></span>
+              <span class="book-action">Read more <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="journey-book-detail" id="journey-grade-10" hidden>
+              <p>I finished 10th grade with 488/500 and secured 3rd place in my school, with a centum in Science.</p>
+              <p>I was also a finalist in the Way to Success examination and got the opportunity to travel to Trichy for the final stage.</p>
+              <p>At this point, I had a very different idea of where I was heading. I wanted to become a cardiologist.</p>
+            </div>
+          </article>
+
+          <article class="journey-book book-rust" data-journey-book="grade-11">
+            <button class="book-cover" type="button" aria-expanded="false" aria-controls="journey-grade-11">
+              <span class="book-number">02</span>
+              <span class="book-year">2024</span>
+              <span class="book-title">11th Grade</span>
+              <span class="book-subtitle">A change in direction.</span>
+              <span class="book-mark" aria-hidden="true"></span>
+              <span class="book-action">Read more <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="journey-book-detail" id="journey-grade-11" hidden>
+              <p>I chose the Computer Science + IIT-oriented path in 11th grade.</p>
+              <p>This was not a decision I arrived at instantly. Because of circumstances and practical considerations at that stage, I had to rethink the path I had originally imagined for myself.</p>
+              <p>I scored 586/600, secured 2nd place in my school and 2nd place at the district level. I was also the only student among 700+ students to score a centum in Physics.</p>
+            </div>
+          </article>
+
+          <article class="journey-book book-olive" data-journey-book="grade-12">
+            <button class="book-cover" type="button" aria-expanded="false" aria-controls="journey-grade-12">
+              <span class="book-number">03</span>
+              <span class="book-year">2025</span>
+              <span class="book-title">12th Grade</span>
+              <span class="book-subtitle">The year everything came together.</span>
+              <span class="book-mark" aria-hidden="true"></span>
+              <span class="book-action">Read more <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="journey-book-detail" id="journey-grade-12" hidden>
+              <p>I finished 12th grade as the school topper with 594/600.</p>
+              <p>I scored 198 in the TNEA cutoff and 92 percentile in JEE Main. I missed JEE Advanced qualification by just one mark.</p>
+              <p>There is also a funny little memory from this phase: I was supposed to get the chance to attend a function where I could have seen Chief Minister Vijay, but my marks increased after revaluation only after the function had already ended.</p>
+            </div>
+          </article>
+
+          <article class="journey-book book-blue" data-journey-book="rec-year-one">
+            <button class="book-cover" type="button" aria-expanded="false" aria-controls="journey-rec-year-one">
+              <span class="book-number">04</span>
+              <span class="book-year">2025–26</span>
+              <span class="book-title">1st Year — REC</span>
+              <span class="book-subtitle">Finding my direction.</span>
+              <span class="book-mark" aria-hidden="true"></span>
+              <span class="book-action">Read more <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="journey-book-detail" id="journey-rec-year-one" hidden>
+              <p>I chose Rajalakshmi Engineering College for my Computer Science &amp; Engineering degree.</p>
+              <p>I was often asked why I didn't choose CEG, MIT or SSN. One of the reasons behind my decision was simple: I could pursue all four years of my degree at REC without tuition fees, which helped reduce the financial burden on my parents.</p>
+              <p>During my first year, I explored different areas of computer science instead of deciding too quickly. Somewhere along the way, I found myself especially drawn to frontend development. I naturally tend to imagine things visually, and frontend development gave me a way to turn those ideas into something people can actually see and use.</p>
+              <p>I completed my first year with a CGPA of 9.6. I also won a Tamil quiz conducted by Yaazh Tamil Mandram, REC, and received a ₹1,000 cash prize.</p>
+            </div>
+          </article>
+
+          <article class="journey-book book-ink book-current" data-journey-book="rec-year-two">
+            <button class="book-cover" type="button" aria-expanded="false" aria-controls="journey-rec-year-two">
+              <span class="book-number">05</span>
+              <span class="book-year">2026–present</span>
+              <span class="book-title">2nd Year</span>
+              <span class="book-subtitle">Starting to build.</span>
+              <span class="book-mark" aria-hidden="true"></span>
+              <span class="book-action">Read more <span aria-hidden="true">+</span></span>
+            </button>
+            <div class="journey-book-detail" id="journey-rec-year-two" hidden>
+              <p>My second year is where I started becoming more serious about problem solving, coding and building things.</p>
+              <p>I started my LeetCode journey and have now solved 200+ problems with 120+ active days. I also started participating more actively in hackathons.</p>
+              <p><strong>SRM Designathon:</strong> Finalist; Top 10 among 80+ teams.</p>
+              <p><strong>SIH Internal Hackathon 2026:</strong> Qualified through the internal hackathon and competed among 500+ teams at REC.</p>
+              <p>This chapter is still being written.</p>
+            </div>
+          </article>
+        </div>
+
+        <div id="journey-reader" class="journey-reader" role="dialog" aria-modal="true" aria-labelledby="journey-reader-title" hidden>
+          <div class="journey-reader-backdrop"></div>
+          <div class="journey-reader-shell">
+            <div class="journey-reader-toolbar">
+              <div>
+                <span class="journey-reader-label">Academic archive</span>
+                <h3 id="journey-reader-title">10th Grade</h3>
+                <span id="journey-reader-year" class="journey-reader-year">2023</span>
+              </div>
+              <button id="journey-reader-close" class="journey-reader-close" type="button">Close book <span aria-hidden="true">×</span></button>
+            </div>
+
+            <div id="journey-page-frame" class="journey-page-frame" aria-live="polite">
+              <article id="journey-page" class="journey-page">
+                <span id="journey-page-number" class="journey-page-number">01</span>
+                <div id="journey-page-content"></div>
+              </article>
+            </div>
+
+            <div class="journey-reader-controls">
+              <button id="journey-prev" class="journey-page-control" type="button">← Previous</button>
+              <span id="journey-page-count">Page 1 / 2</span>
+              <button id="journey-next" class="journey-page-control" type="button">Next →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Projects Section ==================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Projects</span>
+          <h2 class="section-title">Things I've built and things in the works.</h2>
+          <p class="section-desc">Clear distinctions between completed software, active hackathon builds, and conceptual prototypes.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="filter-btn" data-filter="built">Built</button>
+          <button class="filter-btn" data-filter="in-progress">In Progress</button>
+          <button class="filter-btn" data-filter="concept">Concepts</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: RakshaNet (SIH 2026) -->
+          <div class="project-card" data-status="in-progress">
+            <div class="project-content">
+              <div class="project-header-row">
+                <div>
+                  <h3 class="project-title">RakshaNet</h3>
+                  <div class="project-meta-info">SIH 2026 • Problem Statement ID: 26043</div>
+                </div>
+                <span class="badge badge-in-progress">In Progress</span>
+              </div>
+              
+              <div class="project-quote">
+                "Crowdsourcing societal challenges through university &amp; industry partnerships."
+              </div>
+
+              <p class="project-desc">
+                Being developed for the Smart India Hackathon 2026 Internal Hackathon at REC. Bridges civic challenges and student problem-solvers via collaborative problem adoption and open incubation.
+              </p>
+
+              <ul class="project-features">
+                <li>Crowdsourced civic bottleneck reporting with verification layers</li>
+                <li>University-industry partnership matching for student project teams</li>
+                <li>Milestone verification and open solution repository</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">SIH 2026</span>
+                <span class="tag">Hackathon</span>
+                <span class="tag">Crowdsourcing</span>
+                <span class="tag">Collaboration</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="rakshanet-detail">View Architecture Notes</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Debug Diary AI -->
+          <div class="project-card" data-status="concept">
+            <div class="project-content">
+              <div class="project-header-row">
+                <div>
+                  <h3 class="project-title">Debug Diary AI</h3>
+                  <div class="project-meta-info">AI Developer Journal • Learning System</div>
+                </div>
+                <span class="badge badge-concept">Concept / In Progress</span>
+              </div>
+
+              <div class="project-quote">
+                "Things I broke. Things I learned. Things I built."
+              </div>
+
+              <p class="project-desc">
+                An intelligent journaling web app designed to document coding errors, debugging approaches, and breakthroughs. Helps students identify recurring blindspots and suggests relevant hackathons.
+              </p>
+
+              <ul class="project-features">
+                <li>Personalized insights on recurring logic and syntax mistakes</li>
+                <li>Problem-solving streak journal &amp; consistency tracking</li>
+                <li>Hackathon and student competition opportunity radar</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Developer Tools</span>
+                <span class="tag">AI Concepts</span>
+                <span class="tag">Learning Systems</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="debug-diary-detail">Read Design Notes</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: REC Voice -->
+          <div class="project-card" data-status="built">
+            <div class="project-content">
+              <div class="project-header-row">
+                <div>
+                  <h3 class="project-title">REC Voice</h3>
+                  <div class="project-meta-info">College Portal • Grievance Resolution</div>
+                </div>
+                <span class="badge badge-built">Built / Prototype</span>
+              </div>
+
+              <div class="project-quote">
+                "Transparent, anonymous communication for campus betterment."
+              </div>
+
+              <p class="project-desc">
+                An anonymous student feedback and voting portal designed for Rajalakshmi Engineering College to improve transparent communication between students and administration.
+              </p>
+
+              <ul class="project-features">
+                <li>Anonymous complaints &amp; suggestions without identity exposure</li>
+                <li>Thumbs-up community voting system to highlight urgent concerns</li>
+                <li>High, Medium, and Low severity priority classification</li>
+                <li>Transparent status lifecycle: Pending, Under Review, Resolved</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Web Application</span>
+                <span class="tag">Student Portal</span>
+                <span class="tag">Civic Tech</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-modal-target="rec-voice-detail">Explore Features</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Personal Portfolio -->
+          <div class="project-card" data-status="built">
+            <div class="project-content">
+              <div class="project-header-row">
+                <div>
+                  <h3 class="project-title">Personal Portfolio Website</h3>
+                  <div class="project-meta-info">Digital Home • Vanilla Web Architecture</div>
+                </div>
+                <span class="badge badge-built">Built</span>
+              </div>
+
+              <div class="project-quote">
+                "Story > Effects • Personality > Templates • Human-First"
+              </div>
+
+              <p class="project-desc">
+                A handcrafted, editorial personal portfolio designed to document my technical journey, coding records, achievements, and writing without bloated 3D graphics or noisy distractions.
+              </p>
+
+              <ul class="project-features">
+                <li>Handcrafted Vanilla CSS design system with Warm Paper &amp; Dark Ink</li>
+                <li>Integrated Student Stack technical article reader modal</li>
+                <li>Zero dependencies, fully responsive, fast, and accessible</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">HTML5 / Vanilla CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Editorial UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#home" class="btn btn-secondary btn-sm">Current Website</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Number Guessing Game (Full-Width Foundational Card) -->
+          <div class="project-card project-card-featured" data-status="built">
+            <div class="project-content">
+              <div class="project-header-row">
+                <div>
+                  <h3 class="project-title">Number Guessing Game</h3>
+                  <div class="project-meta-info">Foundational Systems • Console Logic in C</div>
+                </div>
+                <span class="badge badge-built">Built</span>
+              </div>
+
+              <p class="project-desc">
+                A console-based logic game developed in C to master core programming building blocks: random number generation algorithms, strict input validation, attempt counter state management, and conditional branching.
+              </p>
+
+              <ul class="project-features">
+                <li>Strengthened deep intuition for loops, memory, functions, and control flow</li>
+                <li>Dynamic directional feedback based on target boundaries and limited guesses</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">C Programming</span>
+                <span class="tag">Console Logic</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Control Flow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Achievements Section ==================== -->
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Achievements</span>
+          <h2 class="section-title">Milestones that speak for themselves.</h2>
+          <p class="section-desc">Quiet numbers and hard work, presented cleanly without exaggerated graphics.</p>
+        </div>
+
+        <div class="achievements-grid milestones-thread">
+          <!-- 12th Grade Result -->
+          <div class="achievement-card">
+            <div class="achievement-category">12th Grade</div>
+            <div class="achievement-big-number">594 / 600</div>
+            <div class="achievement-title">School Topper</div>
+            <p class="achievement-desc">
+              Finished 1st in my school in 12th grade, closing my school journey with a result I was proud of.
+            </p>
+          </div>
+
+          <!-- First-Year CGPA -->
+          <div class="achievement-card">
+            <div class="achievement-category">College Academics</div>
+            <div class="achievement-big-number">9.6 <span class="achievement-sub">CGPA</span></div>
+            <div class="achievement-title">First-Year Academic Standing</div>
+            <p class="achievement-desc">
+              Completed my first year of Computer Science Engineering at Rajalakshmi Engineering College with a 9.6 CGPA.
+            </p>
+          </div>
+
+          <!-- Thinakaran Recognition -->
+          <div class="achievement-card">
+            <div class="achievement-category">Recognition</div>
+            <div class="achievement-big-number">3×</div>
+            <div class="achievement-title">Featured in Thinakaran</div>
+            <p class="achievement-desc">
+              Featured three times in the Thinakaran newspaper for academic excellence.
+            </p>
+          </div>
+
+          <!-- Standardized Exams -->
+          <div class="achievement-card">
+            <div class="achievement-category">Competitive Exams</div>
+            <div class="achievement-big-number">92 <span class="achievement-sub">%ile</span></div>
+            <div class="achievement-title">JEE Main 2025</div>
+            <p class="achievement-desc">
+              Scored in the 92nd percentile in JEE Main 2025 and missed JEE Advanced qualification by one mark.
+            </p>
+          </div>
+
+          <!-- Tamil Quiz Competition -->
+          <div class="achievement-card">
+            <div class="achievement-category">Campus Competition</div>
+            <div class="achievement-big-number">Winner</div>
+            <div class="achievement-title">Tamil Quiz — Yaazh Tamil Mandram</div>
+            <p class="achievement-desc">
+              Secured 1st place in the collegiate Tamil Quiz Competition at REC and received a ₹1,000 cash prize.
+            </p>
+          </div>
+
+          <!-- Hackathon Distinction -->
+          <div class="achievement-card">
+            <div class="achievement-category">Hackathon Achievement</div>
+            <div class="achievement-big-number">Top 10</div>
+            <div class="achievement-title">SRM 24-Hour Designathon</div>
+            <p class="achievement-desc">
+              Finished in the Top 10 among 80+ competing teams at the SRM 24-Hour Designathon and qualified for the SIH 2026 Internal Hackathon.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Experience & Leadership ==================== -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Experience & Leadership</span>
+          <h2 class="section-title">Involvement beyond the classroom.</h2>
+          <p class="section-desc">Taking responsibility, organizing student initiatives, and connecting peers with opportunities.</p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Hintro AI -->
+          <div class="experience-card">
+            <div class="org-logo-frame dark-bg">
+              <img src="assets/images/hintro_logo.png" alt="Official Hintro AI logo" class="org-logo">
+            </div>
+            <div class="experience-content">
+              <div class="experience-header-row">
+                <h3 class="experience-role">Campus Leader</h3>
+                <span class="experience-period">Aug 2026 – Present • Chennai, Tamil Nadu</span>
+              </div>
+              <div class="experience-org">Hintro AI</div>
+              <p class="experience-desc">
+                Represent Hintro on campus by connecting students with opportunities, driving awareness and engagement, building a strong student community, and serving as an active bridge between Hintro and the campus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Youth Red Cross REC -->
+          <div class="experience-card">
+            <div class="org-logo-frame dark-bg">
+              <img src="assets/images/yrc_logo.png" alt="Official Youth Red Cross REC logo" class="org-logo">
+            </div>
+            <div class="experience-content">
+              <div class="experience-header-row">
+                <h3 class="experience-role">Technical Member</h3>
+                <span class="experience-period">Sep 2026 – Present • REC, Chennai</span>
+              </div>
+              <div class="experience-org">Youth Red Cross (YRC) — Rajalakshmi Engineering College</div>
+              <p class="experience-desc">
+                Technical Member of the Youth Red Cross Club at Rajalakshmi Engineering College, contributing to technical, digital, and collaborative community-oriented campus initiatives.
+              </p>
+            </div>
+          </div>
+
+          <!-- Student Stack -->
+          <div class="experience-card">
+            <div class="org-logo-frame">
+              <img src="assets/images/blogger_logo.png" alt="Blogger / Student Stack logo" class="org-logo">
+            </div>
+            <div class="experience-content">
+              <div class="experience-header-row">
+                <h3 class="experience-role">Technical Content Writer</h3>
+                <span class="experience-period">Sep 2026 – Present</span>
+              </div>
+              <div class="experience-org">Student Stack • <a href="https://thestudentstacktech.blogspot.com/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">thestudentstacktech.blogspot.com</a></div>
+              <p class="experience-desc">
+                Writing beginner-friendly technical articles on coding, web architecture, AI productivity tools, and software development while learning, exploring, and sharing along the way.
+              </p>
+            </div>
+          </div>
+
+          <!-- ECSoC -->
+          <div class="experience-card">
+            <div class="org-logo-frame dark-bg">
+              <img src="assets/images/elite_coders_logo.png" alt="Elite Coders logo" class="org-logo">
+            </div>
+            <div class="experience-content">
+              <div class="experience-header-row">
+                <h3 class="experience-role">Campus Ambassador</h3>
+                <span class="experience-period">Jul 2026 – Present</span>
+              </div>
+              <div class="experience-org">Elite Coders Summer of Code (ECSoC)</div>
+              <p class="experience-desc">
+                Promote ECSoC within the student community through outreach initiatives, encourage participation in open-source programs, organise awareness activities, and strengthen community engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Writing Section ==================== -->
+    <section id="writing" class="writing-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Writing</span>
+          <h2 class="section-title">I learn by explaining.</h2>
+          <p class="section-desc">Writing articles for The Student Stack on Blogger to demystify web development, AI workflows, and computer science concepts.</p>
+        </div>
+
+        <!-- Student Stack Blogger Banner -->
+        <div class="writing-blog-banner">
+          <div class="writing-blog-info">
+            <img src="assets/images/blogger_logo.png" alt="Blogger Logo" class="blogger-brand-icon">
+            <div>
+              <div class="writing-blog-title">The Student Stack</div>
+              <div class="writing-blog-tagline">thestudentstacktech.blogspot.com • Technical Blog by Sindhuja Muthusamy</div>
+            </div>
+          </div>
+          <a href="https://thestudentstacktech.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Visit Blog</span>
+            <span class="btn-icon-right">↗</span>
+          </a>
+        </div>
+
+        <div class="writing-grid">
+          <!-- Article 1: Beyond ChatGPT -->
+          <div class="writing-card">
+            <div class="writing-publication-badge">
+              <span>●</span>
+              <span>AI Tools &amp; Productivity • 2026 Guide</span>
+            </div>
+
+            <h3 class="writing-title">
+              Beyond ChatGPT: 11 AI Tools Every College Student Must Explore in 2026
+            </h3>
+
+            <p class="writing-summary">
+              Moving beyond conversational chatbots to explore specialized AI tools built for college challenges — NotebookLM for grounded notes synthesis, Napkin AI for diagrams, n8n for workflow automation, and Antigravity for building projects.
+            </p>
+
+            <div class="writing-meta-row">
+              <span class="writing-read-time">6 min read</span>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn btn-secondary btn-sm" data-modal-target="beyond-chatgpt-detail">
+                  <span>Quick Preview</span>
+                  <span>→</span>
+                </button>
+                <a href="https://thestudentstacktech.blogspot.com/2026/09/beyond-chatgpt-11-ai-tools-every-college-student-must-explore-in-2026.html#more" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Read on Blogger</span>
+                  <span class="btn-icon-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2: What Really Happens When You Open a Website? -->
+          <div class="writing-card">
+            <div class="writing-publication-badge">
+              <span>●</span>
+              <span>Web Architecture Fundamentals</span>
+            </div>
+
+            <h3 class="writing-title">
+              What Really Happens When You Open a Website? The Journey From Browser to Database
+            </h3>
+
+            <p class="writing-summary">
+              A beginner-friendly breakdown of what happens behind the scenes when you enter a URL — covering DNS resolution, TCP handshakes, TLS encryption, HTTP request lifecycles, and how browser rendering engines construct the DOM and CSSOM.
+            </p>
+
+            <div class="writing-meta-row">
+              <span class="writing-read-time">5 min read</span>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn btn-secondary btn-sm" data-modal-target="article-web-journey">
+                  <span>Quick Preview</span>
+                  <span>→</span>
+                </button>
+                <a href="https://thestudentstacktech.blogspot.com/2026/09/what-really-happens-when-you-open-a-website.html#more" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Read on Blogger</span>
+                  <span class="btn-icon-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Skills Section ==================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label-subtle">Skills & Toolkit</span>
+          <h2 class="section-title">Technologies I work with.</h2>
+          <p class="section-desc">Organised by domain without arbitrary percentage bars.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Programming -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Programming Languages</h3>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Frontend Development</h3>
+            <div class="skills-pill-group">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3 / Vanilla CSS</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Backend & Database</h3>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Firebase</span>
+              <span class="skill-pill exploring">Backend Development (Exploring)</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">DevOps & Developer Tools</h3>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Vercel</span>
+              <span class="skill-pill">Canva</span>
+              <span class="skill-pill">Flutter</span>
+              <span class="skill-pill">n8n</span>
+            </div>
+          </div>
+
+          <!-- Core Areas -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Core Competencies</h3>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Data Structures & Algorithms</span>
+              <span class="skill-pill">Frontend Development</span>
+              <span class="skill-pill">Web Development</span>
+              <span class="skill-pill">Open Source</span>
+              <span class="skill-pill">Problem Solving</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Contact Section ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <span class="label-subtle">Get in Touch</span>
+          <h2 class="contact-headline serif-display">Still learning. Still building.</h2>
+          <p class="contact-subtext">
+            I'm figuring things out, building along the way, and documenting the journey. Let's connect.
+          </p>
+
+          <!-- Direct Email Box with One-Click Copy -->
+          <div class="contact-email-wrapper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <a href="mailto:msindhujaa1@gmail.com" class="contact-email-text">msindhujaa1@gmail.com</a>
+            <button id="copy-email-btn" class="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+            <span id="copy-feedback" class="copy-feedback">Copied!</span>
+          </div>
+
+          <!-- Social Links Grid -->
+          <div class="contact-links-grid">
+            <a href="https://www.linkedin.com/in/sindhuja-muthusamy7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/sindhujaamuthusamy72-byte" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://leetcode.com/u/sindhujamuthusamy/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+              <span>LeetCode</span>
+            </a>
+
+            <a href="assets/docs/Sindhuja_Muthusamy_Resume.pdf" download class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+
+          <!-- Quick Note Box -->
+          <div class="quick-note-box">
+            <h3 class="quick-note-title">Send a quick note</h3>
+            <p class="quick-note-desc">Have a question, hackathon team idea, or just want to say hello? Drop a line below.</p>
+            <form id="quick-note-form" class="note-form">
+              <input type="text" id="note-message" class="note-input" placeholder="Type a friendly message or feedback..." required>
+              <button type="submit" class="btn btn-primary">
+                <span>Send Note</span>
+                <span class="btn-icon-right">→</span>
+              </button>
+            </form>
+            <p id="note-status" style="display: none; margin-top: 0.75rem; font-size: 0.88rem; color: var(--accent);"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <span class="footer-author">Sindhuja Muthusamy</span> • 
+        <span>Computer Science Engineering Student</span> • 
+        <span>Rajalakshmi Engineering College</span>
+      </div>
+      <div class="footer-tagline">
+        Built while learning.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== Interactive Modal (Article & Project Deep Dive) ==================== -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Modal Title</h3>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div id="modal-body" class="modal-body">
+        <!-- Dynamic content injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js?v=20261003"></script>
+</body>
+</html>
